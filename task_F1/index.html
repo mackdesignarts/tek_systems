@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tek Systems for GiftCards.com</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="scripts/main.js"></script>
+
+</head>
+<body>
+    <!-- HTML5 file to upload a photo for user -->
+    <header>
+        <h1>HTML5 Image Upload</h1>
+    </header>
+    <div class="container">
+        <div class="contr"><h2>Select a JPG image to upload</h2></div>
+
+        <!-- The upload form -->
+        <div class="upload_form_cont">
+            <form id="upload_form" enctype="multipart/form-data" method="post" action="#">
+                <div>
+                    <div><label for="image_file">Please select image file</label><br /></div>
+                    <div><input type="file" name="image_file" id="image_file" onchange="fileSelected();" /></div>
+                </div>
+                <div><br /><img id="preview" src="/" alt="Tek Systems and GiftCards.com Sample Test Image"/></div>  
+                <div id="fileinfo">
+                    <div id="filename"></div>
+                    <div id="filesize"></div>
+                    <div id="filetype"></div>
+                    <div id="filedim"></div>
+                </div>
+
+                <div id="progress_info">
+                    <div id="progress"></div>
+                    <div id="progress_percent">&nbsp;</div>
+                    <div class="clear_both"></div>
+                    <div>
+                        <div id="speed">&nbsp;</div>
+                        <div id="remaining">&nbsp;</div>
+                        <div id="b_transfered">&nbsp;</div>
+                        <div class="clear_both"></div>
+                    </div>
+                    <div id="upload_response"></div>
+                </div>
+            </form>
+                      
+        </div>
+    </div>
+</body>
+</html>
