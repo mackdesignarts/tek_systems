@@ -19,6 +19,7 @@ $(document).ready( function() {
         success: function(result) {
             
             var truncated, s;
+            $(".images").css({"display": "block"});
 
             for(var i = 0; i < 8; i++){
 
